@@ -48,5 +48,8 @@ Stock Control will look like this:
 2. staff salary information
 This will help understand the pizza costs (ingredients + staff+ delivery)
 
+we also need to seperate the information about staff and their salaries from shift information and time information so I created the below per the requirements
+
+![Pizzaria DB Schema](https://github.com/user-attachments/assets/a695ea47-028f-428e-a8a0-9775bed9645e)
 
 
