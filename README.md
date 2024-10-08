@@ -1,8 +1,8 @@
 # SQL_Database_Creation_and_Analysis
-A sql project consisting of creating a database schema and analyzing data in it.
+A sql project consisting of creating a database schema according to the needs of a hypothetical small business that sells Pizzas! 
 
 ## Task
-Create a database schema and analyze data regarding a small pizza buisness based on the following requirements
+Create a database schema for a small pizza buisness based on the following requirements
 1. The business is only doing take-out and delivery (no dine-ins)
 2. main areas of focus are: Orders, Stock Control, and Staff.
 
@@ -37,17 +37,26 @@ The below diagram fixes that issue.
 ![Pizzaria Orders DB](https://github.com/user-attachments/assets/2ea10ccd-90f0-4398-b596-69946ab1425a)
 
 ### Stock Control Tables
+Assuming the lead time for delivery by all supliers is the same for all ingredients.
+Need to be able to know when to place orders for new stock - 
 
-Need to be able to know when to place orders for new stock - assuming the lead time for delivery by all supliers is the same for all ingredients.
+1. identify quantities for each ingredient and set alarms for when quantity reaches a certain level per ingredient (this is mostly backend but the schema can help with identifying quantities and inventory rotations).
+2. being able to identify which ingredients are used for which recipe.
+
 
 Stock Control will look like this:
 ![Pizzaria Stock Control](https://github.com/user-attachments/assets/1bc544ee-ffed-486b-abee-1e14ba588779)
 
+
+
+
 ### Staff Tables
+Owner wants to be able to know : 
 1. which staff member is working when
 2. staff salary information
-This will help understand the pizza costs (ingredients + staff+ delivery)
 
+
+This will help understand the pizza costs (ingredients + staff+ delivery)
 we also need to seperate the information about staff and their salaries from shift information and time information so I created the below per the requirements
 
 ![Pizzaria DB Schema](https://github.com/user-attachments/assets/a695ea47-028f-428e-a8a0-9775bed9645e)
